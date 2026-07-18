@@ -1,8 +1,6 @@
 import { io } from 'socket.io-client';
 
-const socketUrl = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
-  ? 'http://localhost:5000'
-  : window.location.origin;
+const socketUrl = "https://debug-kd8c.onrender.com"
 
 // Single production-grade socket instance
 export const socket = io(socketUrl, {
